@@ -5,5 +5,9 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <local:ViewModelLocator x:Key="ViewModelLocator" />
+
+        <DataTemplate DataType="{x:Type local:WorkoutsViewModel}">
+            <local:WorkoutsView />
+        </DataTemplate>
     </Application.Resources>
 </Application>
